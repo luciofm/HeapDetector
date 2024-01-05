@@ -111,7 +111,7 @@ class MainActivity : ComponentActivity() {
                 .height(64.dp)
                 .clickable {
                     Toast
-                        .makeText(context, type, Toast.LENGTH_SHORT)
+                        .makeText(context, "${info.name}: $type", Toast.LENGTH_SHORT)
                         .show()
                 }
         ) {
