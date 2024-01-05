@@ -107,6 +107,7 @@ class MainActivity : ComponentActivity() {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
+                .fillMaxWidth()
                 .height(64.dp)
                 .clickable {
                     Toast
