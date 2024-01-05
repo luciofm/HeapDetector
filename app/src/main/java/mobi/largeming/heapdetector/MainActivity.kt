@@ -69,7 +69,7 @@ class MainActivity : ComponentActivity() {
         LazyColumn {
             stickyHeader {
                 Text(
-                    text = "  Large Heap Apps",
+                    text = "  Large Heap Apps: ${state.largeHeapApps.size}",
                     style = Typography.titleLarge,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
@@ -85,7 +85,7 @@ class MainActivity : ComponentActivity() {
             }
             stickyHeader {
                 Text(
-                    text = "  Normal Heap Apps",
+                    text = "  Normal Heap Apps: ${state.normalHeapApps.size}",
                     style = Typography.titleLarge,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
